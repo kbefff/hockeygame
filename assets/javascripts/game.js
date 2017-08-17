@@ -1,8 +1,6 @@
 /*JavaScript*/
 
-  //<button id="reset">
-  //<button id="teamone-shoot">
-  //<button id="teamtwo-shoot">
+
 (function() {
 
 
@@ -26,11 +24,18 @@
 
     console.log(teamOneShoot.innerHTML)
     teamOneShoot.innerHTML = parseInt(teamOneShoot.innerHTML) + 1;
+    var shottaken = new Audio("assets/sounds/hit.mp3");
+    shottaken.play();
+
+
 
 
     console.log(Math.random())
       if (Math.random() > .7) {
       goalsOne.innerHTML = parseInt(goalsOne.innerHTML) + 1;
+        setTimeout(function(){
+        new Audio("assets/sounds/score.mp3").play();
+      }, 2000);
     }
 
   })
@@ -67,12 +72,19 @@
 
 
     console.log(Math.random())
-      if (Math.random() < .4) {
+    if (Math.random() < .4) {
       goalsTwo.innerHTML = parseInt(goalsTwo.innerHTML) + 1;
+      new Audio("assets/sounds/hit.mp3").play();
+
+
+
+      setTimeout(function(){
+        new Audio("assets/sounds/score.mp3").play();
+      }, 2000);
     }
 
   })
-//mySound = new Audio([URLString]);
+
 //////////////////////RESET///////////////////////////////////
   let reset = document.querySelector("#reset");
   console.log(reset);
@@ -96,7 +108,7 @@
     console.log(numReset.innerHTML)
     numReset.innerHTML = parseInt(numReset.innerHTML) + 1;
 
-//////////////////////GOAL///////////////////////////////////
+
   })
 
 })();

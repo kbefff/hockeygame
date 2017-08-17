@@ -27,7 +27,7 @@
         GOALS: <span id="teamone-numhits">0</span>
       </div>
       <div>
-        <button id="teamone-shoot" onclick="playSound();">SHOOT</button>
+        <button id="teamone-shoot">SHOOT</button>
       </div>
     </div>
     <div class="right">
@@ -39,7 +39,7 @@
         GOALS: <span id="teamtwo-numhits">0</span>
       </div>
       <div>
-        <button id="teamtwo-shoot" onclick="playSound();">SHOOT</button>
+        <button id="teamtwo-shoot">SHOOT</button>
       </div>
     </div>
     <div class="clear"></div>
@@ -47,18 +47,8 @@
 
 
 
-<audio id="audio" src="assets/sounds/hit.mp3" autostart="false" ></audio>
-<audio id="open" src="assets/sounds/organ.mp3" autostart="false" ></audio>
-  <script>
-  function playSound() {
-        var shottaken = document.getElementById("audio");
-        shottaken.play();
-    }
 
 
-
-
-  </script>
 
   <script type ="text/javascript" src="assets/javascripts/game.js"></script>
 </body>

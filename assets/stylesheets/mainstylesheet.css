@@ -1,0 +1,42 @@
+.contained {
+  display: flex;
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 50px 100px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px #888888;
+  justify-content: center;
+  font-weight: 900; }
+  .contained h1, .contained h2 {
+    display: flex;
+    justify-content: center; }
+
+.hide {
+  display: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+body {
+  display: flex;
+  background-image: url("../images/hockeyarena.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 400px;
+  justify-content: center;
+  color: #1626f5;
+  background-color: #a1cddd; }
+
+#reset, #teamone-shoot, #teamtwo-shoot {
+  background-color: #e2fd5b;
+  color: red;
+  margin: 10px; }
+
+/*# sourceMappingURL=mainstylesheet.css.map */
